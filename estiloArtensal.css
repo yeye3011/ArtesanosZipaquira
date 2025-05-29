@@ -1,0 +1,67 @@
+
+.artensal-title {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #5E202F;
+    text-align: center;
+    margin: 1.2rem 2rem 0; /* Reduce margen superior e inferior */
+}
+
+.animacion-artensal {
+    display: block;
+    margin: 1.2rem 0rem 1rem 1rem;
+    max-width: 92vw;   
+    height: auto;      /* mantiene proporción original */
+    text-align: center;
+}
+
+.linea{
+    height: 100px;
+    width: auto;
+    margin-top: -5rem;
+    margin-left: 1.2rem;
+    transform: translateY(92px); 
+}
+
+.artensal {
+    color: #4A3931;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0 3rem 0.5rem;
+}
+
+.ubicacion {
+    color: #4A3931;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.ubicacion img {
+    width: 16px;
+    height: 18px;
+    margin: 0.3rem 0 0 3rem;
+}
+
+.productos {
+    color: #4A3931;
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0.5rem 3rem;
+}
+
+.contacto {
+    color: #4A3931;
+    font-weight: 600;
+    font-size: 0.8rem;
+    margin: 1rem 3.5rem;
+}
+
+.imagen-artensal {
+    width: 200px;
+    height: auto;
+    margin-left: 12.2rem ;
+    margin-top: -3rem; /* súbela visualmente */
+}
+

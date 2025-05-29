@@ -1,0 +1,46 @@
+.ferias-title {
+    font-weight: 800;
+    font-size: 2rem;
+    color: #5E202F;
+    text-align: center;
+    margin: 1.2rem 2rem 0; /* Reduce margen superior e inferior */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin: 1rem auto;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.container .img {
+    width: 42%;
+    height: 150px;           
+    object-fit: cover;         
+    border-radius: 6px;
+}
+
+.titulo{
+    color: #4A3931;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 2rem;
+}
+
+.contenido{
+    color: #4A3931;
+    font-weight: 400;
+    font-size: 0.7rem;
+    margin: 1rem 2rem 0;
+    line-height: 1.5;
+}
+
+.fecha{
+    color: #4A3931;
+    font-weight: 600;
+    font-size: 0.7rem;
+    margin: 1rem 2rem 2.5rem;
+}

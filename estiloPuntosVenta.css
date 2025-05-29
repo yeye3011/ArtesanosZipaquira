@@ -1,0 +1,119 @@
+
+.puntosVenta-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #5E202F;
+    text-align: center;
+    margin: 1.2rem 1rem 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin: 2rem 1.5rem 0 1.5rem;
+    flex-wrap: nowrap; /* siempre dos columnas */
+}
+
+.video-wrapper {
+    position: relative;
+    width: 40vw;
+    max-width: 180px;
+    height: 120px;
+    flex-shrink: 0;
+    overflow: visible;
+    z-index: 1;
+}
+
+/* Hover en el wrapper para mayor estabilidad */
+.video-wrapper:hover {
+    z-index: 1001;
+}
+
+/* Estado normal del video */
+video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    position: relative;
+    transition: all 0.4s ease;
+    display: block;
+}
+
+/* Hover en el wrapper afecta al video */
+.video-wrapper:hover video {
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    width: min(80vw, 700px);
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: 1002;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+}
+
+/* Backdrop usando pseudo-elemento */
+.video-wrapper:hover::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 1001;
+    pointer-events: none;
+}
+
+.video-wrapper:hover::after {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+    pointer-events: all;
+}
+
+.container img {
+    width: 45vw;
+    max-width: 200px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Textos */
+.titulo {
+    font-weight: bold;
+    font-size: 0.92rem;
+    color: #4A3931;
+    margin-top: 0.2rem;
+}
+
+.ubicacion {
+    margin-top: -0.4rem;
+    font-style: italic;
+    font-size: 0.68rem;
+    color: #4A3931;
+}
+
+.contenido {
+    font-size: 0.75rem;
+    font-style: italic;
+    color: #4A3931;
+    margin-top: -0.4rem;
+ 
+}
+
+.content{
+    font-style: italic;
+    font-size: 0.75rem;
+    color: #4A3931;   
+    margin-top: -0.4rem;
+    margin-bottom: 3rem;
+}

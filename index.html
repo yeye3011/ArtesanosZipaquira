@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camino Artesano</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../general.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="Imagenes/Menu.png" alt="Menú" class="menu-icon" id="menuToggle">
+        <a href="index.html">
+            <img src="Imagenes/Logo.png" alt="Camino Artesano" class="logo">
+        </a>
+        <nav class="menu-desplegable" id="menuDesplegable">
+            <ul>
+                <li><a href="ferias.html">Ferias Artesanales</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="puntosVenta.html">Puntos de Venta Artesanos</a></li>
+                <li><a onclick="mostrarFormulario()">Únete a Camino Artesano</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="intro-text">
+        ¡Descubre la magia <br>
+        del arte hecho a mano!
+    </div>
+
+    <div class="botones">
+        <button class="btn-ferias" onclick="window.location.href='ferias.html'">FERIAS ARTESANOS</button>
+        <button class="btn-puntos"onclick="window.location.href='puntosVenta.html'">PUNTOS DE VENTA ARTESANOS</button>
+    </div>
+
+   <section class="mapa">
+        <img src="Imagenes/Mapa y Chisga.png" alt="Mapa y chisga">
+        <div class="mapa-texto">
+            <p>Conoce los artesanos <br>
+            de Zipaquirá</p>
+            <button class="btn-mapa" onclick="window.location.href='mapa.html'">IR AL MAPA</button>
+
+        </div>
+    </section>
+
+    <button class="btn-unete" onclick="mostrarFormulario()">¿ERES ARTESANO? <br>
+        🤝ÚNETE</button>
+
+    <!-- Formulario flotante -->
+    <div id="formularioFlotante" class="formulario-flotante"style="display: none;">
+    <span class="cerrar-x" onclick="cerrarFormulario()">✕</span>
+    <form id="form-artesano">
+        <h3>Formulario de Contacto</h3>
+        
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="tecnica">Técnica de artesanía:</label>
+        <input type="text" id="tecnica" name="tecnica" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <button type="submit">Enviar</button>
+       
+    </form>
+    </div>
+
+
+  <footer>
+    <p class="footer-title">CAMINO ARTESANO</p>
+    <div class="footer-email">
+        <img src="Imagenes/email.png" alt="Email icon">
+        <span>camino.artesano@gmail.com</span>
+    </div>
+    <nav class="footer-nav">
+        <a href="index.html">Inicio</a> |
+        <a href="ferias.html">Ferias</a> |
+        <a href="mapa.html">Mapa</a> |
+        <a onclick="mostrarFormulario()">Únete</a>
+    </nav>
+    <p class="footer-copy">© 2025 Camino Artesano.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapa - Camino Artesano</title>
+  <link rel="stylesheet" href="../general.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="mapa_style.css" />
+
+
+</head>
+<body>
+  
+  <header>
+        <img src="Imagenes/Menu.png" alt="Menú" class="menu-icon" id="menuToggle">
+        <a href="index.html">
+            <img src="Imagenes/Logo.png" alt="Camino Artesano" class="logo">
+        </a>
+        <nav class="menu-desplegable" id="menuDesplegable">
+            <ul>
+                <li><a href="ferias.html">Ferias Artesanales</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="puntosVenta.html">Puntos de Venta Artesanos</a></li>
+                <li><a onclick="mostrarFormulario()">Únete a Camino Artesano</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+     <div class="botones">
+        <button class="btn-ferias" onclick="window.location.href='ferias.html'">FERIAS ARTESANOS</button>
+        <button class="btn-puntos"onclick="window.location.href='puntosVenta.html'">PUNTOS DE VENTA ARTESANOS</button>
+    </div>
+
+  <!-- Contenedor del mapa -->
+  <div id="map"></div>
+  
+  <footer>
+        <p class="footer-title">CAMINO ARTESANO</p>
+        <div class="footer-email">
+            <img src="Imagenes/email.png" alt="Email icon">
+            <span>camino.artesano@gmail.com</span>
+        </div>
+        <nav class="footer-nav">
+            <a href="index.html">Inicio</a> |
+            <a href="ferias.html">Ferias</a> |
+            <a href="mapa.html">Mapa</a> |
+            <a onclick="mostrarFormulario()">Únete</a>
+        </nav>
+        <p class="footer-copy">© 2025 Camino Artesano.</p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <img id="Chisga_Mapa" src="Imagenes/Chisga Mapa.png" alt="Chisga_Mapa" />
+  <img id="Pajaro_Mapa" src="Imagenes/Pajarito Mapa.png" alt="Pajaro_Mapa"
+     onclick="window.open('https://yeye3011.github.io/RunnerGameArtesanos/')" />
+  
+  <!-- Script del mapa -->
+  <script src="script_mapa.js"></script>
+</body>
+</html>
+
+
